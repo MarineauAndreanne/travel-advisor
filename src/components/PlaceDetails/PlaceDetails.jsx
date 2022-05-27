@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   Box,
   Typography,
@@ -8,17 +8,17 @@ import {
   CardContent,
   CardActions,
   Chip,
-} from "@material-ui/core";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-import PhoneIcon from "@material-ui/icons/Phone";
-import Rating from "@material-ui/lab/Rating";
+} from "@material-ui/core"
+import LocationOnIcon from "@material-ui/icons/LocationOn"
+import PhoneIcon from "@material-ui/icons/Phone"
+import Rating from "@material-ui/lab/Rating"
 
-import useStyles from "./style.js";
+import useStyles from "./style.js"
 
 const PlaceDetails = ({ place, selected, refProp }) => {
   if (selected)
-    refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  const classes = useStyles();
+    refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+  const classes = useStyles()
 
   return (
     <Card elevation={6}>
@@ -61,7 +61,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
             alignItems="center"
             key={i}
           >
-            <img src={award.images.small} />
+            <img src={award.images.small} alt={award} />
             <Typography variant="subtitle2" color="textSecondary">
               {award.display_name}
             </Typography>
@@ -108,7 +108,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
         </Button>
       </CardActions>
     </Card>
-  );
-};
+  )
+}
 
-export default PlaceDetails;
+export default PlaceDetails

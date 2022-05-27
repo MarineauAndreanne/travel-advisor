@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from "react";
+import React, { useState, useEffect, createRef } from "react"
 import {
   CircularProgress,
   Grid,
@@ -7,11 +7,11 @@ import {
   MenuItem,
   FormControl,
   Select,
-} from "@material-ui/core";
+} from "@material-ui/core"
 
-import PlaceDetails from "../PlaceDetails/PlaceDetails";
+import PlaceDetails from "../PlaceDetails/PlaceDetails"
 
-import useStyles from "./style";
+import useStyles from "./style"
 
 const List = ({
   places,
@@ -22,8 +22,8 @@ const List = ({
   rating,
   setRating,
 }) => {
-  const classes = useStyles();
-  const [elementRefs, setElementRefs] = useState([]);
+  const classes = useStyles()
+  const [elementRefs, setElementRefs] = useState([])
 
   // console.log({ childClicked });
 
@@ -32,13 +32,13 @@ const List = ({
       Array(places.length)
         .fill()
         .map((_, i) => refs[i] || createRef())
-    );
-  }, [places]);
+    )
+  }, [places])
 
   return (
     <div className={classes.container}>
       <Typography variant="h2">
-        Restaurants, Hotels and Attractions around you.
+        Restaurants, Hotels and Attractions near you.
       </Typography>
       {isLoading ? (
         <div className={classes.loading}>
@@ -77,7 +77,7 @@ const List = ({
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default List;
+export default List

@@ -18,7 +18,6 @@ const App = () => {
 
   const [childClicked, setChildClicked] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
-  const [autocomplete, setAutocomplete] = useState(null)
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -32,7 +31,7 @@ const App = () => {
     const filteredPlaces = places.filter((place) => place.rating > rating)
 
     setFilteredPlaces(filteredPlaces)
-  }, [rating])
+  }, [rating, places])
 
   useEffect(() => {
     async function main() {
