@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles"
 
 export default makeStyles(() => ({
   paper: {
@@ -21,4 +21,4 @@ export default makeStyles(() => ({
   pointer: {
     cursor: "pointer",
   },
-}));
+}))

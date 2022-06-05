@@ -1,3 +1,5 @@
+//Snazzy Maps = even lighter
+
 let styles = [
   {
     featureType: "administrative",
@@ -9,50 +11,20 @@ let styles = [
     ],
   },
   {
-    featureType: "administrative.province",
-    elementType: "geometry.stroke",
+    featureType: "landscape",
+    elementType: "all",
     stylers: [
       {
-        visibility: "off",
+        color: "#f2f2f2",
       },
     ],
   },
   {
     featureType: "landscape",
-    elementType: "geometry",
+    elementType: "geometry.fill",
     stylers: [
       {
-        lightness: "0",
-      },
-      {
-        saturation: "0",
-      },
-      {
-        color: "#f5f5f2",
-      },
-      {
-        gamma: "1",
-      },
-    ],
-  },
-  {
-    featureType: "landscape.man_made",
-    elementType: "all",
-    stylers: [
-      {
-        lightness: "-3",
-      },
-      {
-        gamma: "1.00",
-      },
-    ],
-  },
-  {
-    featureType: "landscape.natural.terrain",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "off",
+        color: "#ffffff",
       },
     ],
   },
@@ -70,7 +42,7 @@ let styles = [
     elementType: "geometry.fill",
     stylers: [
       {
-        color: "#bae5ce",
+        color: "#e6f3d6",
       },
       {
         visibility: "on",
@@ -106,7 +78,7 @@ let styles = [
     elementType: "geometry.fill",
     stylers: [
       {
-        color: "#fac9a9",
+        color: "#f4d2c5",
       },
       {
         visibility: "simplified",
@@ -119,6 +91,15 @@ let styles = [
     stylers: [
       {
         color: "#4e4e4e",
+      },
+    ],
+  },
+  {
+    featureType: "road.arterial",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        color: "#f4f4f4",
       },
     ],
   },
@@ -145,52 +126,7 @@ let styles = [
     elementType: "all",
     stylers: [
       {
-        visibility: "simplified",
-      },
-    ],
-  },
-  {
-    featureType: "transit.station.airport",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        hue: "#0a00ff",
-      },
-      {
-        saturation: "-77",
-      },
-      {
-        gamma: "0.57",
-      },
-      {
-        lightness: "0",
-      },
-    ],
-  },
-  {
-    featureType: "transit.station.rail",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        color: "#43321e",
-      },
-    ],
-  },
-  {
-    featureType: "transit.station.rail",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        hue: "#ff6c00",
-      },
-      {
-        lightness: "4",
-      },
-      {
-        gamma: "0.75",
-      },
-      {
-        saturation: "-68",
+        visibility: "off",
       },
     ],
   },
@@ -211,22 +147,7 @@ let styles = [
     elementType: "geometry.fill",
     stylers: [
       {
-        color: "#c7eced",
-      },
-    ],
-  },
-  {
-    featureType: "water",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        lightness: "-49",
-      },
-      {
-        saturation: "-53",
-      },
-      {
-        gamma: "0.79",
+        color: "#eaf6f8",
       },
     ],
   },
